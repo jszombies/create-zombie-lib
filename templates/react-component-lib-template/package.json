@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack --mode=production",
     "storybook": "start-storybook -p 9001 -c ./config/storybook",
-    "eslint": "./node_modules/.bin/eslint ./src/**/*",
+    "eslint": "eslint ./src/**/*",
     "test": "jest",
     "coverage": "jest --coverage"
   },
