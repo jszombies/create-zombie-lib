@@ -1,0 +1,9 @@
+# initial
+node_modules/
+dist/
+lib/
+.idea/
+.vscode/
+.DS_Store
+*.log
+coverage/

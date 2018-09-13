@@ -1,0 +1,18 @@
+{
+  "name": "create-zombie-lib",
+  "version": "0.0.1",
+  "description": "Create js library project script",
+  "main": "index.js",
+  "bin": {
+    "create-zombie-lib": "./index.js"
+  },
+  "files": [
+    "templates/"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.18.0",
+    "ora": "^3.0.0"
+  }
+}
