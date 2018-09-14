@@ -6,6 +6,9 @@
   "bin": {
     "create-zombie-lib": "./index.js"
   },
+  "scripts": {
+    "install-global": "yarn global add --prefix /usr/local"
+  },
   "files": [
     "src/**/*",
     "templates/**/*"
