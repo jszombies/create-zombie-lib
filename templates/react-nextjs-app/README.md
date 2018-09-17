@@ -27,3 +27,13 @@ Lint:
 ## Styleguide 
 
 Use [standart](https://github.com/standard/standard) styleguide. Make sure you have configured your editor.
+
+## License
+
+[MIT](LICENSE)
+
+[license-url]: LICENSE
+
+[license-image]: https://img.shields.io/github/license/mashape/apistatus.svg
+
+[capture]: capture.png
