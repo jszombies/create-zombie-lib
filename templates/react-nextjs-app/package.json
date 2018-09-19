@@ -9,11 +9,17 @@
     "build": "next build",
     "start": "next start",
     "storybook": "start-storybook -c ./config/storybook/ -p 6006",
-    "lint": "standart",
+    "lint": "standard",
+    "lint-fix": "standard --fix",
     "test": "jest",
-    "test-watch": "jest --watchAll"
+    "test-watch": "jest --watchAll",
+    "flow": "flow"
   },
   "standard": {
+    "parser": "babel-eslint",
+    "plugins": [
+      "flowtype"
+    ],
     "globals": [
       "describe",
       "it",
@@ -21,25 +27,38 @@
     ]
   },
   "dependencies": {
-    "next": "^6.1.2",
+    "next": "^7.0.0-canary.20",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "styled-components": "^3.4.6"
+    "styled-components": "^3.4.9"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.4.10",
-    "@storybook/addon-centered": "^3.4.10",
-    "@storybook/addon-knobs": "^3.4.10",
-    "@storybook/addon-links": "^3.4.10",
-    "@storybook/addon-notes": "^3.4.10",
-    "@storybook/addons": "^3.4.10",
-    "@storybook/react": "^3.4.10",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
+    "@storybook/addon-actions": "^4.0.0-alpha.16",
+    "@storybook/addon-centered": "^4.0.0-alpha.16",
+    "@storybook/addon-knobs": "^4.0.0-alpha.16",
+    "@storybook/addon-links": "^4.0.0-alpha.16",
+    "@storybook/addon-notes": "^4.0.0-alpha.16",
+    "@storybook/addons": "^4.0.0-alpha.16",
+    "@storybook/react": "^4.0.0-alpha.16",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
+    "babel-jest": "^23.6.0",
+    "babel-plugin-lodash": "^3.3.4",
     "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-styled-components": "^1.7.1",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "eslint-plugin-flowtype": "^2.50.1",
+    "flow-bin": "^0.81.0",
     "jest": "^23.6.0",
+    "jest-extended": "^0.9.0",
     "jsimports": "0.0.9",
+    "regenerator-runtime": "^0.12.1",
     "standard": "^12.0.1",
     "storybook-readme": "^4.0.0-beta1"
   }

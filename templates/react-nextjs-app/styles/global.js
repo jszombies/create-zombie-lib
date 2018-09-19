@@ -12,7 +12,6 @@ export default () =>
     }
 
     body {
-      font-family: "Formular", sans-serif;
       font-size: 1.6rem;
       margin: 0;
       padding: 0;
@@ -20,6 +19,10 @@ export default () =>
 
     * {
       box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     ul {

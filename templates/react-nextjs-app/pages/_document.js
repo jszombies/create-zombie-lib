@@ -1,11 +1,19 @@
+// @flow
+
 import { ServerStyleSheet } from 'styled-components'
 import Document, { Head, Main, NextScript } from 'next/document'
-import injectGlobalStyles from '../styles/global'
+import React from 'react'
+
+import injectGlobalStyles from 'styles/global'
 
 injectGlobalStyles()
 
+type Props = {
+  renderPage: Function
+}
+
 export default class MyDocument extends Document {
-  static getInitialProps ({ renderPage }) {
+  static getInitialProps ({ renderPage }: Props) {
     const sheet = new ServerStyleSheet()
     const page = renderPage(App => props => sheet.collectStyles(<App {...props} />))
     const styleTags = sheet.getStyleElement()

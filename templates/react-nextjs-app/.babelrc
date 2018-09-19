@@ -3,18 +3,22 @@
     "next/babel"
   ],
   "plugins": [
-    ["babel-plugin-styled-components", {
-      "ssr": true, 
-      "displayName": true, 
-      "preprocess": false 
-    }],
     ["module-resolver", {
       "root": ["./"],
       "alias": {
         "components": "./components",
         "styles": "./styles",
       }
-    }]
+    }],
+    "@babel/plugin-transform-flow-strip-types",
+    "@babel/plugin-proposal-class-properties",
+    "@babel/plugin-syntax-object-rest-spread",
+    ["babel-plugin-styled-components", {
+      "ssr": true, 
+      "displayName": true, 
+      "preprocess": false 
+    }],
+    "lodash"
   ],
   "env": {
     "test": {

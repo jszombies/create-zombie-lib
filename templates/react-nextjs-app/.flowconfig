@@ -1,0 +1,16 @@
+[ignore]
+.*/node_modules/*
+.*/.next/*
+
+[include]
+./components
+./config
+./pages
+./styles
+
+[libs]
+
+[options]
+emoji=true
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=.
