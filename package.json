@@ -7,7 +7,7 @@
     "create-zombie-lib": "./index.js"
   },
   "scripts": {
-    "install-global": "yarn global add --prefix /usr/local",
+    "install-global": "npm i -g",
     "lint": "standard",
     "lint-fix": "standard --fix"
   },
