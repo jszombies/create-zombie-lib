@@ -8,7 +8,13 @@
   },
   "scripts": {
     "install-global": "yarn global add --prefix /usr/local",
-    "lint": "standart"
+    "lint": "standard",
+    "lint-fix": "standard --fix"
+  },
+  "standard": {
+    "ignore": [
+      "templates"
+    ]
   },
   "files": [
     "src/**/*",
@@ -22,6 +28,6 @@
   },
   "devDependencies": {
     "importjs": "^3.0.2",
-    "standart": "^6.1.0"
+    "standard": "^12.0.1"
   }
 }

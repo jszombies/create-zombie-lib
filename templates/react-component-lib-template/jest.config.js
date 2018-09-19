@@ -74,7 +74,7 @@ module.exports = {
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       './config/jest/__mocks__/fileMock.js',
-    '\\.(css|less|scss)$': 'identity-obj-proxy',
+    '\\.(css|less|scss)$': 'identity-obj-proxy'
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader
@@ -180,5 +180,5 @@ module.exports = {
   // watchPathIgnorePatterns: [],
 
   // Whether to use watchman for file crawling
-  watchman: true,
-};
+  watchman: true
+}

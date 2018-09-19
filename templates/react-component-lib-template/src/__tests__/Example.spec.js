@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-import { mount } from 'enzyme';
+import { mount } from 'enzyme'
 
-import Example from '../index';
+import Example from '../index'
 
 describe('Example', () => {
   it('should render the Example Component', () => {
-    const wrapper = mount(<Example />);
-    expect(wrapper.find('div').text()).toEqual('Example component');
-  });
-});
+    const wrapper = mount(<Example />)
+    expect(wrapper.find('div').text()).toEqual('Example component')
+  })
+})
