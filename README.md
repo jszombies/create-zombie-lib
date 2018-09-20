@@ -1,6 +1,8 @@
 # create-zombie-lib
 
-CLI application for creating new js libraries.
+> CLI for creating javascript applications and libraries.
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Installation
 
@@ -21,6 +23,28 @@ Basic usage example:
 Create using specific template:
 
 `$ create-zombie-lib my-react-component-lib --template react-component-lib-template`
+
+## Templates
+
+### react-component-lib-template
+
+#### Features
+
+* [Webpack](https://webpack.js.org/) for bundling
+* [Storybook](https://github.com/storybooks/storybook) for development
+* [Jest](https://facebook.github.io/jest/) for testing
+* [Standard](https://standardjs.com/) for linting 
+
+### react-nextjs-app
+
+#### Features
+
+* [NextJs](https://nextjs.org/) for ssr and app bootstrap
+* [StyledComponents](https://www.styled-components.com/) for styling
+* [Storybook](https://github.com/storybooks/storybook) for development
+* [Jest](https://facebook.github.io/jest/) for testing
+* [Standard](https://standardjs.com/) for linting 
+* [Flow](https://flow.org/) for type checks
 
 ## License
 
