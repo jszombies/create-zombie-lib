@@ -5,6 +5,7 @@ import * as React from 'react'
 
 export const defaultTheme = {
   colors: {
+    'white': '#fff',
     'pink': '#ff007d',
     'pink-dark': '#f00076'
   }

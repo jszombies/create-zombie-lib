@@ -1,8 +1,8 @@
 import { configure, addDecorator } from '@storybook/react'
-import DefaultThemeDecorator from 'components/themes/DefaultThemeDecorator'
 import centered from '@storybook/addon-centered'
+import injectGlobalStyles from 'styles/global'
 
-import injectGlobalStyles from '../../styles/global'
+import { DefaultThemeDecorator } from './decorators'
 
 injectGlobalStyles()
 
