@@ -5,10 +5,11 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "deps": "npm i && npm i -g flow-typed && flow-typed install",
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "storybook": "start-storybook -c ./config/storybook/ -p 6006",
+    "storybook": "start-storybook -c ./.config/storybook/ -p 6006",
     "lint": "standard",
     "lint-fix": "standard --fix",
     "test": "jest",
@@ -27,10 +28,16 @@
     ]
   },
   "dependencies": {
+    "lodash": "^4.17.11",
     "next": "^7.0.0-canary.20",
+    "next-redux-wrapper": "^2.0.0",
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
-    "styled-components": "^3.4.9"
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^3.4.6"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
@@ -53,11 +60,14 @@
     "babel-plugin-styled-components": "^1.7.1",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint-plugin-flowtype": "^2.50.1",
     "flow-bin": "^0.81.0",
     "jest": "^23.6.0",
     "jest-extended": "^0.9.0",
+    "jest-styled-components": "^6.2.1",
     "jsimports": "0.0.9",
+    "redux-devtools-extension": "^2.13.5",
     "regenerator-runtime": "^0.12.1",
     "standard": "^12.0.1",
     "storybook-readme": "^4.0.0-beta1"

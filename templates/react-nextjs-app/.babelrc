@@ -8,6 +8,7 @@
       "alias": {
         "components": "./components",
         "styles": "./styles",
+        "store": "./store"
       }
     }],
     "@babel/plugin-transform-flow-strip-types",

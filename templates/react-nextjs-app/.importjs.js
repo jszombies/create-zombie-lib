@@ -1,1 +1,1 @@
-module.exports = require('./config/importjs/config')
+module.exports = require('./.config/importjs/config')

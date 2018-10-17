@@ -78,13 +78,13 @@ module.exports = function run (__dirname) {
     })
 
   program
-    .command('*')
     .arguments('<project-directory>')
     .usage(`${chalk.green('<project-directory>')} [options]`)
-    .action(name => {
+    .option('-t, --template <template>', 'Use specific template type')
+    .action((name, cmd) => {
       projectName = name
 
-      templateName = program.template || templateName
+      templateName = cmd.template || templateName
 
       if (!projectName) {
         console.error('Please specify the project directory:')
@@ -105,7 +105,6 @@ module.exports = function run (__dirname) {
 
       createLibrary({ __dirname, projectName, templateName })
     })
-    .option('-t, --template [name]', 'Use specific template type')
 
   program.parse(process.argv)
 }

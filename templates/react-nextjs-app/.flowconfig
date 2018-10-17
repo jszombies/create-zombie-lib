@@ -1,6 +1,7 @@
 [ignore]
 .*/node_modules/*
 .*/.next/*
+.*\.md
 
 [include]
 ./components
@@ -14,3 +15,4 @@
 emoji=true
 module.system.node.resolve_dirname=node_modules
 module.system.node.resolve_dirname=.
+module.name_mapper.extension='md' -> '<PROJECT_ROOT>/.config/flow/MarkdownFlowStub.js.flow'
